@@ -1,0 +1,97 @@
+/* 
+    Created on : Dec 9, 2018, 3:50:05 PM
+    Author     : d-Inquisitor
+*/
+
+.cb-head{
+    border-bottom: 1px solid #eee;
+    padding: 30px 0px 30px 2%;
+    width: 100%
+}
+.co-head{
+    border-bottom: 1px solid #eee;
+    padding: 30px 0px 30px 2%
+}
+.cb-head div:first-child, .co-head div:first-child{
+    color: #aaa;
+    font-size: 34px
+}
+.isub{
+    margin-left: 3%
+}
+.pd{
+    margin-top: 10px
+}
+a.blogtitle:link{
+    font-size: 23px;
+    text-decoration: none
+}
+a.blogtitle:hover, a.blogtitle:active, a.blogtitle:visited, a.blogtitle:focus{
+    text-decoration: none
+}
+.blogdate{
+    color: #aaa
+}
+.blogdesc{
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 18px
+}
+.bdes{
+    padding-bottom: 14px;
+}
+.cc-head{
+    border-bottom: 1px solid #eee;
+    padding: 30px 0px 30px 2%;
+    display: block
+}
+.cc-head span:first-child{
+    color: #555;
+    font-size: 34px
+}
+.t-ful{
+    width: 15%
+}
+.c-img{
+    height: 70px;
+    width: 70px;
+    margin-left: 50px
+}
+.abt-body{
+    width: 70%;
+    word-wrap: break-word;
+    font-size: 13px;
+    text-align: justify;
+    text-justify: inter-word
+}
+.cm a:link{
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 40px
+}
+.mr-head{
+    font-size: 28px
+}
+.cua{
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro'
+}
+.mkr {
+    padding: 0px 15px 0px 15px
+}
+
+.co-body{
+    margin-left: 160px;
+    width: 50%;
+    word-wrap: break-word;
+    font-size: 15px
+}
+.rplnk{
+    color: #aaa;
+    font-size: 15px;
+    cursor: pointer
+}
+.cred{
+    font-size: 15px;
+    color: #999
+}

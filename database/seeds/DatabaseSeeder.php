@@ -1,0 +1,46 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // $this->call(UsersTableSeeder::class);
+        DB::table('articles')->insert([
+            'title' => 'Laravel blog example',
+            'description' => 'Just another article. Pellentesque rutrum nisi vitae turpis elementum, suscipit hendrerit ante consectetur.',
+            'body' => "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam libero vel congue. Integer dui urna, euismod vel diam quis, sagittis feugiat ipsum. Aenean convallis mi aliquet tellus lobortis, id pellentesque orci rutrum. Curabitur ut sapien in erat viverra suscipit non non justo. Integer tincidunt, nisi vitae maximus elementum, lacus mauris varius purus, id dictum mi justo eget nulla. Mauris in nibh in nisi gravida facilisis. Nunc ut egestas tortor. Suspendisse facilisis bibendum mauris. Aenean dictum molestie felis id lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam at dapibus nisl. Vivamus id dignissim purus. Suspendisse vehicula ipsum eu pulvinar venenatis. Pellentesque fringilla, nulla quis posuere rhoncus, dui justo malesuada erat, id efficitur nibh odio vitae turpis. Quisque imperdiet purus in nisi euismod aliquam. Suspendisse ornare nibh ut elit suscipit maximus.</p>"
+                      ."<p>Pellentesque rutrum nisi vitae turpis elementum, suscipit hendrerit ante consectetur. Vivamus elit elit, scelerisque eu nunc a, blandit tincidunt diam. Phasellus placerat enim nec velit hendrerit, vel sodales tellus pharetra. Nunc venenatis lorem non porta tincidunt. Sed et mauris lectus. Vivamus interdum urna enim, sit amet molestie elit scelerisque vitae. Sed neque nisi, volutpat a luctus eu, pharetra eu dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>"
+                      ."<p>Integer tellus turpis, aliquet quis metus non, efficitur sollicitudin neque. Aenean mollis dapibus est, nec maximus eros sagittis eu. Quisque facilisis odio quis magna blandit tristique. Nunc et nisl risus. Nulla auctor id mi eu vulputate. Phasellus tempor dolor augue, a vehicula urna vulputate vitae. Duis molestie eros lacus, auctor volutpat justo fermentum ac. Donec dapibus ex nec urna molestie scelerisque. Curabitur at elementum mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce id sapien pharetra, varius ex eget, imperdiet metus. Nulla sagittis tortor quis magna faucibus, non finibus urna porttitor. Nam blandit mattis lorem.</p>"
+                      ."<p>Donec hendrerit arcu at maximus tempus. Proin tincidunt cursus mollis. Nullam eu enim mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vitae ipsum ac ipsum fringilla rutrum. Vestibulum auctor tempor felis a viverra. Vestibulum rutrum venenatis nunc, in dictum libero aliquet sit amet. Ut interdum vulputate eros. Donec tempus odio eget diam ornare, et viverra dolor gravida. Nam tempus sem quis mi ullamcorper ultricies.</p>"
+                      ."<p>Aliquam dapibus purus orci, vulputate porttitor arcu suscipit vitae. Morbi ornare placerat tortor, ultricies elementum metus fermentum semper. Proin viverra porta arcu, sed tincidunt ligula maximus a. Morbi pharetra ipsum nec pellentesque tincidunt. Morbi erat mi, feugiat vel justo vitae, facilisis porta justo. Nam maximus mi vitae sollicitudin aliquam. Aliquam hendrerit mauris id maximus gravida. Phasellus mattis feugiat tellus, eu luctus metus laoreet ac. Nunc et orci id velit cursus sodales. Proin et sodales arcu. Aliquam rutrum dui ac hendrerit consectetur. Duis nunc elit, pulvinar eu justo vel, viverra lacinia leo. Donec egestas eu nunc ut consectetur. Aliquam egestas, arcu eu tincidunt tristique, nulla sapien tincidunt purus, id pellentesque sapien ex in magna. Donec lacus purus, tincidunt accumsan pharetra nec, tempus vel velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            'times_viewed' => 0,
+            'link' => str_slug('Laravel blog example'),
+            'about_author' => "Aliquam dapibus purus orci, vulputate porttitor arcu suscipit vitae. Morbi ornare placerat tortor, ultricies elementum metus fermentum semper. Proin viverra porta arcu, sed tincidunt ligula maximus a. Morbi pharetra ipsum nec pellentesque tincidunt. Morbi erat mi, feugiat vel justo vitae, facilisis porta justo.",
+            'author_image' => 'image.png',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        DB::table('articles')->insert([
+            'title' => 'Another article on the blog',
+            'description' => 'Just a second article. Pellentesque rutrum nisi vitae turpis elementum, suscipit hendrerit ante consectetur.',
+            'body' => "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam libero vel congue. Integer dui urna, euismod vel diam quis, sagittis feugiat ipsum. Aenean convallis mi aliquet tellus lobortis, id pellentesque orci rutrum. Curabitur ut sapien in erat viverra suscipit non non justo. Integer tincidunt, nisi vitae maximus elementum, lacus mauris varius purus, id dictum mi justo eget nulla. Mauris in nibh in nisi gravida facilisis. Nunc ut egestas tortor. Suspendisse facilisis bibendum mauris. Aenean dictum molestie felis id lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam at dapibus nisl. Vivamus id dignissim purus. Suspendisse vehicula ipsum eu pulvinar venenatis. Pellentesque fringilla, nulla quis posuere rhoncus, dui justo malesuada erat, id efficitur nibh odio vitae turpis. Quisque imperdiet purus in nisi euismod aliquam. Suspendisse ornare nibh ut elit suscipit maximus.</p>"
+                      ."<p>Pellentesque rutrum nisi vitae turpis elementum, suscipit hendrerit ante consectetur. Vivamus elit elit, scelerisque eu nunc a, blandit tincidunt diam. Phasellus placerat enim nec velit hendrerit, vel sodales tellus pharetra. Nunc venenatis lorem non porta tincidunt. Sed et mauris lectus. Vivamus interdum urna enim, sit amet molestie elit scelerisque vitae. Sed neque nisi, volutpat a luctus eu, pharetra eu dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>"
+                      ."<p>Integer tellus turpis, aliquet quis metus non, efficitur sollicitudin neque. Aenean mollis dapibus est, nec maximus eros sagittis eu. Quisque facilisis odio quis magna blandit tristique. Nunc et nisl risus. Nulla auctor id mi eu vulputate. Phasellus tempor dolor augue, a vehicula urna vulputate vitae. Duis molestie eros lacus, auctor volutpat justo fermentum ac. Donec dapibus ex nec urna molestie scelerisque. Curabitur at elementum mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce id sapien pharetra, varius ex eget, imperdiet metus. Nulla sagittis tortor quis magna faucibus, non finibus urna porttitor. Nam blandit mattis lorem.</p>"
+                      ."<p>Donec hendrerit arcu at maximus tempus. Proin tincidunt cursus mollis. Nullam eu enim mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vitae ipsum ac ipsum fringilla rutrum. Vestibulum auctor tempor felis a viverra. Vestibulum rutrum venenatis nunc, in dictum libero aliquet sit amet. Ut interdum vulputate eros. Donec tempus odio eget diam ornare, et viverra dolor gravida. Nam tempus sem quis mi ullamcorper ultricies.</p>"
+                      ."<p>Aliquam dapibus purus orci, vulputate porttitor arcu suscipit vitae. Morbi ornare placerat tortor, ultricies elementum metus fermentum semper. Proin viverra porta arcu, sed tincidunt ligula maximus a. Morbi pharetra ipsum nec pellentesque tincidunt. Morbi erat mi, feugiat vel justo vitae, facilisis porta justo. Nam maximus mi vitae sollicitudin aliquam. Aliquam hendrerit mauris id maximus gravida. Phasellus mattis feugiat tellus, eu luctus metus laoreet ac. Nunc et orci id velit cursus sodales. Proin et sodales arcu. Aliquam rutrum dui ac hendrerit consectetur. Duis nunc elit, pulvinar eu justo vel, viverra lacinia leo. Donec egestas eu nunc ut consectetur. Aliquam egestas, arcu eu tincidunt tristique, nulla sapien tincidunt purus, id pellentesque sapien ex in magna. Donec lacus purus, tincidunt accumsan pharetra nec, tempus vel velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            'times_viewed' => 0,
+            'link' => str_slug('Another article on the blog'),
+            'about_author' => "Aliquam dapibus purus orci, vulputate porttitor arcu suscipit vitae. Morbi ornare placerat tortor, ultricies elementum metus fermentum semper. Proin viverra porta arcu, sed tincidunt ligula maximus a. Morbi pharetra ipsum nec pellentesque tincidunt. Morbi erat mi, feugiat vel justo vitae, facilisis porta justo.",
+            'author_image' => 'image.png',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+    }
+}
