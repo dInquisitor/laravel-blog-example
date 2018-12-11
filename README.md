@@ -7,3 +7,5 @@ This is an open source blog project built with laravel 5.7
   * php artisan migrate
   * php artisan db:seed
 * Then execute a **php artisan serve** and access the project on your browser at http://localhost:8000/
+# Contributing
+Pull requests are highly encouraged and appreciated.
